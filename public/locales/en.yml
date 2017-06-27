@@ -1,0 +1,6 @@
+en:
+  plugins:
+    aspace_yale_pui:
+      opac_link_header: Catalog Record
+      opac_link_label: A record for this collection is available in Orbis, the Yale University Library catalog
+      opac_link_url: "http://hdl.handle.net/10079/bibid/%{opac_id}"

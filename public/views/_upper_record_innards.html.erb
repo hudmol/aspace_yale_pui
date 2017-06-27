@@ -1,0 +1,6 @@
+<% if @result.is_a?(Resource) && @result.opac_id %>
+  <h4><%= I18n.t('plugins.aspace_yale_pui.opac_link_header') %></h4>
+  <p>
+    <%= link_to I18n.t('plugins.aspace_yale_pui.opac_link_label'), I18n.t('plugins.aspace_yale_pui.opac_link_url', :opac_id => @result.opac_id) %>
+  </p>
+<% end %>
