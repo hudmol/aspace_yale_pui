@@ -43,7 +43,7 @@ See also:
 # Configuration
 
 The OPAC link is currently generated from the OPAC Id in the resource's user
-defined `string_3` field.  If your OPAC Id is stored elsewhere, please modify
+defined `string_2` field.  If your OPAC Id is stored elsewhere, please modify
 the file `public/models/resource_ext.rb` to return the value from your desired
 field.  The link header, label and URL may be modified via the locales
 e.g. `public/locales/en.yml` for English.  Please note, the OPAC Id is passed

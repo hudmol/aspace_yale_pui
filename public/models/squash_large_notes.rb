@@ -1,11 +1,9 @@
 module SquashLargeNotes
 
   def merge_notes_by_type(notes_hash, type, note_struct)
-    # we want to handle notes that begin with (1)
-    if note_struct['label'] =~ /^\([0-9]+\)/
-      # drop the prefix
-      note_struct['label'] = note_struct['label'].sub(/^\([0-9]+\)\s*/, '')
-    end
+    # we want to drop the split notation from note labels
+    # ie. a label prefixed with (1) or (2) or (3)
+    note_struct['label'] = note_struct['label'].sub(/^\([0-9]+\)\s*/, '')
 
     # now all labels that match for this note type will be merged sans label
     super
