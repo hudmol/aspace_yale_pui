@@ -7,7 +7,7 @@ module RomanizeSeriesIdentifier
       }
     end
 
-    if @level == 'series' && json.dig('component_id') && json.dig('component_id') =~ /^[0-9]+$/
+    if raw['level'] == 'series' && json.dig('component_id') && json.dig('component_id') =~ /^[0-9]+$/
       romanize(json.dig('component_id').to_i)
     else
       super
